@@ -1,0 +1,12 @@
+{
+  "recommendation": [
+    "esbenp.prettier-vscode",
+    "JakeWilson.vscode-cdnjs",
+    "formulahendry.auto-close-tag",
+    "kisstkondoros.vscode-gutter-preview",
+    "oderwat.indent-rainbow",
+    "PKief.material-icon-theme",
+    "formulahendry.auto-rename-tag",
+    "steoates.autoimport"
+  ]
+}
