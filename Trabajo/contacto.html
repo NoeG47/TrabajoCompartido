@@ -3,8 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Quienes somos</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+    />
+    <style>
+      .map-responsive {
+        overflow: hidden;
+        padding-bottom: 50%;
+        position: relative;
+        height: 0;
+      }
+      @media (min-width: 576px) {
+        .map-responsive iframe {
+          left: 0;
+          top: 0;
+          height: 50%;
+          width: 50%;
+          position: absolute;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <p>http://127.0.0.1:5500/Trabajo/contacto.html</p>
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name" />
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name" />
+        </div>
+      </div>
+      <div class="form-row align-items-center">
+        <div class="col-auto">
+          <label class="sr-only" for="inlineFormInputGroup">Username</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="inlineFormInputGroup"
+              placeholder="Username"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail3"
+              placeholder="Email"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-2 col-form-label"
+            >Password</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword3"
+              placeholder="Password"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-7">
+            <input type="text" class="form-control" placeholder="City" />
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="State" />
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Zip" />
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="form-check mb-2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="autoSizingCheck"
+            />
+            <label class="form-check-label" for="autoSizingCheck">
+              Remember me
+            </label>
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </div>
+      </div>
+    </form>
+    <div class="container-fluid">
+      <div class="map-responsive">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5830754464773!2d-3.6511085!3d40.4180861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f590cc9e311%3A0xc41663562cea8737!2sCementerio%20de%20la%20Almudena%20(SFM)%20-%20Entrada%20de%20O&#39;donnell!5e0!3m2!1ses!2ses!4v1712141897243!5m2!1ses!2ses"
+          width="300"
+          height="150"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
