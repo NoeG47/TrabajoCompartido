@@ -12,32 +12,41 @@
 
     <style>
       .container mt-5 {
-        text-align: center;
-        margin: auto;
+        text-align: left;
+        margin-top: 50px;
       }
       .text-start {
         font-family: "Courier New", Courier, monospace;
+        margin-bottom: 10px;
+      }
+      .mx-auto p-2{
+        width: 200px; 
+        margin-bottom:20px; 
+        margin-top: 100px;
+        padding: 200px;
       }
     </style>
     <title>Quienes somos</title>
   </head>
   <body>
     <p>http://127.0.0.1:5500/Trabajo/quienessomos.html</p>
-    <h1>CONÓCENOS</h1>
+    <h1 class="mx-auto p-2" style="width: 200px;">CONÓCENOS</h1>
     <div class="container mt-5">
       <p class="text-start">
         Desata tu creatividad y estudia en el mejor club de videojuegos de la
-        Comunidad de Madrid
+        Comunidad de Madrid. 
       </p>
       <img
         src="/Trabajo/imagenes/foto1.jpg"
-        class="rounded float-start"
-        alt="Jóvenes programando su primer juego"
+        class="img-thumbnail"
+        alt="Jóvenes programando su primer juego" height="500px" width="1000px"
       />
     </div>
-    <div class="container mt-5">
-      <h1>ZONA DE JUEGOS</h1>
-      <p></p>
+  
+      <h1 class="mx-auto p-2" style="width: 200px;">ZONA DE JUEGOS</h1>
+      <div class="container mt-5">
+      <p class="text-start">Tendrás la posibilidad de mostrar tus capacidades artísticas y de diseño en juegos para experimentados y no experimentados</p>
+    </div>
       <img
         src="/Trabajo/imagenes/foto2.jpg"
         class="rounded float-end"
@@ -45,7 +54,6 @@
         height="400 px"
         width="500 px"
       />
-    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
