@@ -13,7 +13,7 @@
     <style>
       #carouselExampleInterval {
         max-width: 35%;
-        margin: 30px;
+        margin-right: 20px;
         float: left;
       }
       @media (min-width: 769px) and (max-width: 991px) {
@@ -52,14 +52,13 @@
       }
       #cajaCafeteria{
         background-color: #ccc;
+        padding: 8%;
       }
-      /* por qué la cajaCAfeteria solo crece según el texto
-      no según la foto, cuando aparece una foto más grande 
-      el div no se hace más grande pero cuando mueve el texto
-      y este ocupa más espacio si que cambia */
-      @media (min-width: 769px) and (max-width: 991px) {
-        #cajaCafeteria {
-          max-height: fit-content;
+      /* Al ponerlo en un tamaño de móvil no me deja poner un margin top
+      en si la estructura está bien pero no me pone ni padding ni márgenes arriba*/
+      @media (max-width: 768px) {
+        #defCafeteria {
+          padding-top: 100px;
         }
       }
       
@@ -70,7 +69,7 @@
   <body>
     <p>http://127.0.0.1:5500/Trabajo/servicios.html</p>
 
-    <!-- BREADCRUMB -->
+    <!-- BREADCRUMB ruta del menu -->
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -93,7 +92,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <img
-              src="/Trabajo/imagenes/foto5.jpg"
+              src="/Trabajo/imagenes/foto8.jpg"
               class="d-block w-100"
               alt="..."
             />
@@ -107,7 +106,7 @@
           </div>
           <div class="carousel-item">
             <img
-              src="/Trabajo/imagenes/foto8.jpg"
+              src="/Trabajo/imagenes/foto9.jpg"
               class="d-block w-100"
               alt="..."
             />
@@ -152,7 +151,7 @@
     </div>
 
     <div class="card" style="width: 18rem;">
-      <img src="/Trabajo/imagenes/foto6.jpg" class="card-img-top" alt="...">
+      <img src="/Trabajo/imagenes/foto10.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Carta de la cafetería</h5>
         <p class="card-text">En nuestra nueva cafetería contamos con comida para todos los clientes, vegana, vegetariana, glutenFree, baja en azúcares...</p>
@@ -161,11 +160,11 @@
     </div>
 
     <div class="card" style="width: 18rem;">
-      <img src="/Trabajo/imagenes/foto6.jpg" class="card-img-top" alt="...">
+      <img src="/Trabajo/imagenes/foto10.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Carta de la cafetería</h5>
-        <p class="card-text">En nuestra nueva cafetería contamos con comida para todos los clientes, vegana, vegetariana, glutenFree, baja en azúcares...</p>
-        <a href="#" class="btn btn-primary">Consultar carta</a>
+        <h5 class="card-title">?????????????</h5>
+        <p class="card-text">????????????? ?????????????</p>
+        <a href="#" class="btn btn-primary">???????</a>
       </div>
     </div>
 
