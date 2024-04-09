@@ -12,38 +12,9 @@
     />
     <style>
       #carouselExampleInterval {
-        max-width: 35%;
         margin-right: 20px;
-        float: left;
       }
-      @media (min-width: 769px) and (max-width: 991px) {
-        #carouselExampleInterval {
-          max-width: 50%;
-        }
-      }
-      @media (max-width: 768px) {
-        #carouselExampleInterval {
-          max-width: 99%;
-        }
-      }
-
-      .card{
-        max-width: 35%;
-        margin: 30px;
-        float: left;
-      }
-      @media (min-width: 769px) and (max-width: 991px) {
-        #card {
-          max-width: 50%;
-        }
-      }
-      @media (max-width: 768px) {
-        #card {
-          max-width: 99%;
-        }
-      }
-
-      body {
+      .card, body{
         margin: 30px;
       }
       h1,
@@ -54,11 +25,16 @@
         background-color: #ccc;
         padding: 8%;
       }
+      .container-text-center{
+        margin-top: 50px;
+        border: solid 2px #ccc;
+      }
       /* Al ponerlo en un tamaño de móvil no me deja poner un margin top
       en si la estructura está bien pero no me pone ni padding ni márgenes arriba*/
+
       @media (max-width: 768px) {
         #defCafeteria {
-          padding-top: 100px;
+          padding-top: 30px;
         }
       }
       
@@ -83,7 +59,12 @@
       de nuestros clientes.
     </p>
 
-    <div id="cajaCafeteria">
+
+
+
+<div class="container-text-center">
+  <div class="row align-items-start">
+    <div class="col-lg-6 col-md-8 col-sm-12">
       <div
         id="carouselExampleInterval"
         class="carousel slide"
@@ -131,42 +112,75 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
+    </div>
+    <div class="col-lg-6 col-md-4 col-sm-12">
       <div id="defCafeteria">
-        Sumérgete en el ambiente vibrante y acogedor de nuestro Café del Mal,
-        diseñado especialmente para los amantes de los videojuegos como tú.
-        Situado en el corazón de nuestro club, este espacio es el lugar perfecto
-        para relajarte, socializar y recargar energías mientras te tomas un
-        descanso de los juegos. Nuestro menú ofrece una amplia variedad de
-        deliciosas opciones para satisfacer todos los gustos y antojos. Desde
-        cafés artesanales y bebidas energéticas hasta bocadillos sabrosos y
-        postres a buen precio, encontrarás todo lo que necesitas para mantener
-        tu espíritu competitivo y tu paladar contento. Además de nuestra
-        irresistible selección de alimentos y bebidas, el Café Gamer cuenta con
-        cómodas zonas de estar equipadas con pantallas de alta definición y
-        consolas de última generación, donde puedes jugar con amigos o
-        participar en emocionantes torneos organizados por el club. Disfruta con
-        nosotros uniéndote asociándote a nuestro club.
+        <h2>Cafetería</h2>
+        <p>Sumérgete en el ambiente vibrante y acogedor de nuestro Café del Mal,
+          diseñado especialmente para los amantes de los videojuegos como tú.
+          Situado en el corazón de nuestro club, este espacio es el lugar perfecto
+          para relajarte, socializar y recargar energías mientras te tomas un
+          descanso de los juegos. Nuestro menú ofrece una amplia variedad de
+          deliciosas opciones para satisfacer todos los gustos y antojos. Desde
+          cafés artesanales y bebidas energéticas hasta bocadillos sabrosos y
+          postres a buen precio, encontrarás todo lo que necesitas para mantener
+          tu espíritu competitivo y tu paladar contento. Además de nuestra
+          irresistible selección de alimentos y bebidas, el Café Gamer cuenta con
+          cómodas zonas de estar equipadas con pantallas de alta definición y
+          consolas de última generación, donde puedes jugar con amigos o
+          participar en emocionantes torneos organizados por el club. Disfruta con
+          nosotros uniéndote asociándote a nuestro club.</p>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="card" style="width: 18rem;">
-      <img src="/Trabajo/imagenes/foto10.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Carta de la cafetería</h5>
-        <p class="card-text">En nuestra nueva cafetería contamos con comida para todos los clientes, vegana, vegetariana, glutenFree, baja en azúcares...</p>
-        <a href="#" class="btn btn-primary">Consultar carta</a>
-      </div>
-    </div>
 
-    <div class="card" style="width: 18rem;">
-      <img src="/Trabajo/imagenes/foto10.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">?????????????</h5>
-        <p class="card-text">????????????? ?????????????</p>
-        <a href="#" class="btn btn-primary">???????</a>
+<div id="defZonaGaming">
+  <h2>Zona gaming</h2>
+  <p>Nuestra zona gaming está equipada con lo último en tecnología para proporcionarte horas interminables de diversión.
+
+    ¿Qué ofrecemos?
+    
+        Ordenadores de Alto Rendimiento: Disfruta de la potencia y velocidad de nuestros ordenadores de última generación. Con hardware de alto rendimiento y gráficos impresionantes, tendrás la experiencia de juego más fluida y envolvente.
+    
+        Consolas de Última Generación: Vive la emoción de jugar en las consolas más populares del mercado. Desde PlayStation hasta Xbox y Nintendo Switch, tenemos todas las consolas y los juegos más solicitados para que disfrutes al máximo.
+    
+        Amplia Variedad de Videojuegos: Ya sea que te gusten los juegos de acción, aventura, estrategia o deportes, tenemos una amplia selección de títulos para satisfacer todos los gustos. Desde los clásicos hasta los lanzamientos más recientes, siempre encontrarás algo emocionante para jugar.
+    
+        Espacio Confortable y Ergonómico: Tu comodidad es nuestra prioridad. Nuestra zona gaming cuenta con aire acondicionado para mantener una temperatura agradable en todo momento. Además, nuestras sillas ergonómicas te brindarán el soporte necesario para largas sesiones de juego sin molestias.</p>
+</div>
+
+
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col -md-6">
+      <div class="card" style="width: 18rem;">
+        <img src="/Trabajo/imagenes/foto10.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Carta de la cafetería</h5>
+          <p class="card-text">En nuestra nueva cafetería contamos con comida para todos los clientes, vegana, vegetariana, glutenFree, baja en azúcares...</p>
+          <a href="#" class="btn btn-primary">Consultar carta</a>
+        </div>
       </div>
     </div>
+    <div class="col -md-6">
+      <div class="card" style="width: 18rem;">
+        <img src="/Trabajo/imagenes/foto10.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">?????????????</h5>
+          <p class="card-text">????????????? ?????????????</p>
+          <a href="#" class="btn btn-primary">???????</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      One of three columns
+    </div>
+  </div>
+</div>
+
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
