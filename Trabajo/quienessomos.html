@@ -13,99 +13,241 @@
     <title>Quienes somos</title>
   </head>
   <body>
-    <!--primer container-->
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Columna-texto-izq -->
-        <div class="col-md-6">
-          <h2>CONÓCENOS</h2>
-          <p>
-            Desata tu creatividad y estudia en el mejor club de videojuegos de
-            la Comunidad de Madrid.
-          </p>
-          <p>
-            Nulla facilisi. Donec auctor quam ut mi vehicula consequat. Duis
-            quis odio a nibh fermentum rhoncus. Nam porta libero eget felis
-            vehicula, a suscipit ipsum consequat. Duis in justo sit amet libero
-            aliquam gravida id id nisi.
-          </p>
-        </div>
-        <!-- Columna-imagen-drch -->
-        <div class="col-md-6">
+    <!--<p>http://127.0.0.1:5500/Trabajo/inicio.html</p>-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-lg-4" href="#">
           <img
-            src="imagenes/foto1.jpg"
-            alt="imagen de diseño"
-            class="img-fluid"
-          />
+            src="../Trabajo/imagenes/logo.png"
+            alt="Logo"
+            height="28"
+            width="30"
+            class="d-inline-block align-text-top"
+          /><span class="ms-2">Club del mal</span></a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll m-auto"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Servicios
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cafetería</a></li>
+                <li><a class="dropdown-item" href="#">Zona gaming</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Juegos</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Conócenos</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <!--segundo container-->
-
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Columna-imagen-izq -->
-        <div class="col-md-6">
-          <img
-            src="imagenes/foto2.jpg"
-            alt="imagen de pacman"
-            class="img-fluid"
-          />
-        </div>
-        <!-- Columna-texto-drch -->
-        <div class="col-md-6">
-          <h2>EXPERIENCIA</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            euismod ligula nec ante consectetur, nec cursus elit iaculis.
-          </p>
-          <p>
-            Nulla facilisi. Donec auctor quam ut mi vehicula consequat. Duis
-            quis odio a nibh fermentum rhoncus. Nam porta libero eget felis
-            vehicula, a suscipit ipsum consequat. Duis in justo sit amet libero
-            aliquam gravida id id nisi.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--cartas-->
-    <div class="container">
-      <div class="row">
-        <!-- CARTA PARA FORMULARIO-->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="" />
-
-            <div class="card-body">
-              <h5 class="card-title">Contacta con nosotros</h5>
-              <p class="card-text">
-                Escríbenos para poder acceder a nuestros servicios
+    </nav>
+    <!--cuerpo del index div padre-->
+    <div
+      class="container-fluid border border-black"
+      style="border: 1px solid orange !important"
+    >
+      <!--seccion2-->
+      <div
+        class="contendor mx-5 border border-black">
+        
+        <!--primer container-->
+        <div class="container-fluid">
+          <div class="row align-items-center mt-4 mb-4">
+            <!-- Columna-texto-izq -->
+            <div class="col-md-6">
+              <h2>CONÓCENOS</h2>
+              <p>
+                Desata tu creatividad y estudia en el mejor club de videojuegos de
+                la Comunidad de Madrid.
               </p>
-              <a href="#" class="btn btn-primary">Formulario de inscripción</a>
+              <p>
+                Nulla facilisi. Donec auctor quam ut mi vehicula consequat. Duis
+                quis odio a nibh fermentum rhoncus. Nam porta libero eget felis
+                vehicula, a suscipit ipsum consequat. Duis in justo sit amet libero
+                aliquam gravida id id nisi.
+              </p>
             </div>
-          </div>
-        </div>
-        <!-- CARTA CON ENLACE -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="" />
-            <div class="card-body">
-              <h5 class="card-title">Tenemos canal de Youtube</h5>
-              <p class="card-text">Conoce nuestras redes sociales</p>
-            </div>
-          </div>
-        </div>
-        <!-- CARTA HACIA NUESTRAS INSTALACIONES -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="" />
-            <div class="card-body">
-              <h5 class="card-title">Visita nuestras instalaciones</h5>
-              <p class="card-text">Descubre el ambiente de</p>
+            <!-- Columna-imagen-drch -->
+            <div class="col-md-6">
+              <img
+                src="imagenes/foto1.jpg"
+                alt="imagen de diseño"
+                class="img-fluid"
+              />
             </div>
           </div>
         </div>
       </div>
+      <!--fin seccion2-->
+      <!--seccion3-->
+      <div
+        class="contendor mx-5 border border-black">
+        <!--segundo container-->
+    
+        <div class="container-fluid">
+          <div class="row align-items-center mt-4 mb-4">
+            <!-- Columna-imagen-izq -->
+            <div class="col-md-6">
+              <img
+                src="imagenes/foto2.jpg"
+                alt="imagen de pacman"
+                class="img-fluid"
+              />
+            </div>
+            <!-- Columna-texto-drch -->
+            <div class="col-md-6">
+              <h2>EXPERIENCIA</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                euismod ligula nec ante consectetur, nec cursus elit iaculis.
+              </p>
+              <p>
+                Nulla facilisi. Donec auctor quam ut mi vehicula consequat. Duis
+                quis odio a nibh fermentum rhoncus. Nam porta libero eget felis
+                vehicula, a suscipit ipsum consequat. Duis in justo sit amet libero
+                aliquam gravida id id nisi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--fin seccion3-->
+      <!--seccion4-->
+      <div
+        class="contendor mx-5 border border-black">
+        <!--cartas-->
+        <div class="container-fluid mt-4 mb-4">
+          <div class="row">
+            <!-- CARTA PARA FORMULARIO-->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="" />
+    
+                <div class="card-body">
+                  <h5 class="card-title">Contacta con nosotros</h5>
+                  <p class="card-text">
+                    Escríbenos para poder acceder a nuestros servicios
+                  </p>
+                  <a href="#" class="btn btn-primary">Formulario de inscripción</a>
+                </div>
+              </div>
+            </div>
+            <!-- CARTA CON ENLACE -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="" />
+                <div class="card-body">
+                  <h5 class="card-title">Tenemos canal de Youtube</h5>
+                  <p class="card-text">Conoce nuestras redes sociales</p>
+                </div>
+              </div>
+            </div>
+            <!-- CARTA HACIA NUESTRAS INSTALACIONES -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="" />
+                <div class="card-body">
+                  <h5 class="card-title">Visita nuestras instalaciones</h5>
+                  <p class="card-text">Descubre el ambiente de</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--fin seccion4-->
+      <!--seccion5-->
+      <div
+        class="contendor mx-5 border border-black"
+        style="height: 100vh"
+      ></div>
+      <!--fin seccion5-->
+    </div>
+
+    <!--aqui empieza el footer-->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">
+          Copyright © 2024 Club del mal.
+        </p>
+
+        <a class="bi me-2" width="40" height="32" href="#">
+          <img
+            src="../Trabajo/imagenes/logo.png"
+            alt="Logo"
+            height="34"
+            width="36"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-body-secondary"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Servicios
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cafetería</a></li>
+              <li><a class="dropdown-item" href="#">Zona gaming</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Juegos</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Conócenos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Contacto</a>
+          </li>
+        </ul>
+      </footer>
     </div>
 
     <script
@@ -113,11 +255,5 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <style>
-      .container {
-        margin-top: 50px;
-        margin-bottom: 50px;
-      }
-    </style>
   </body>
 </html>
