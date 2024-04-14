@@ -12,6 +12,16 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--<p>http://127.0.0.1:5500/Trabajo/inicio.html</p>-->
@@ -33,7 +43,9 @@
                 height="28"
                 width="30"
                 class="d-inline-block align-text-top logo"
-              /><span class="ms-2 fs-3">Club del mal</span></a
+              /><span class="ms-2 fs-3 permanent-marker-regular bg-text"
+                >Club del mal</span
+              ></a
             >
             <button
               class="navbar-toggler collapsed"
@@ -51,7 +63,7 @@
               class="navbar-collapse collapse justify-content-end"
               id="navbarsExample04"
             >
-              <ul class="navbar-nav mb-2 mb-md-0">
+              <ul class="navbar-nav mb-2 mb-md-0 nav-underline merienda">
                 <li class="nav-item">
                   <a class="nav-link active fs-5" aria-current="page" href="#"
                     >Inicio</a
@@ -95,46 +107,36 @@
     </div>
     <!--fin de prueba-->
     <!--cuerpo del index div padre-->
-    <div
-      class="container-fluid border border-black"
-      style="border: 1px solid orange !important"
-    >
+    <div class="container-fluid">
       <!--div del carrousel-->
       <!--aqui estaba el mx-5 y el container, lo hemos cambiado por c-fluid-->
-      <div class="container-fluid border border-danger">
-        <div class="container-fluid border p-0">
+      <div class="container-fluid slider" id="miDiv">
+        <div class="container-fluid h-100">
           <!--añadir aqui-->
           <div
             id="carouselExampleSlidesOnly"
-            class="carousel slide h-100"
+            class="carousel slide h-100 carousel-fade"
             data-bs-ride="carousel"
           >
             <div class="carousel-inner h-100">
-              <div class="carousel-item active" data-bs-interval="5000">
-                <img
-                  src="../Trabajo/imagenes/slider2.jpg"
-                  class="d-block w-100 h-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
+              <div class="carousel-item active h-100" data-bs-interval="3000">
                 <img
                   src="../Trabajo/imagenes/slider4.jpg"
-                  class="d-block w-100 h-100"
+                  class="d-block w-100 h-100 rounded"
                   alt="..."
                 />
               </div>
-              <div class="carousel-item" data-bs-interval="5000">
+              <div class="carousel-item h-100" data-bs-interval="3000">
                 <img
                   src="../Trabajo/imagenes/slider1.jpg"
-                  class="d-block w-100 h-100"
+                  class="d-block w-100 h-100 rounded"
                   alt="..."
                 />
               </div>
-              <div class="carousel-item" data-bs-interval="5000">
+              <div class="carousel-item h-100" data-bs-interval="3000">
                 <img
                   src="../Trabajo/imagenes/slider3.jpg"
-                  class="d-block w-100 h-100"
+                  class="d-block w-100 h-100 rounded"
                   alt="..."
                 />
               </div>
@@ -146,14 +148,14 @@
       <!--seccion2-->
       <!--aqui estaba el mx-5 y el container, lo hemos cambiado por c-fluid-->
       <!--quitar el height, border,, todo css en hoja externa-->
-      <div class="container-fluid border border-danger">
+      <div class="container-fluid">
         <div class="container-fluid align-content-center px-0">
           <!--añadir cosas aqui, debajo-->
-          <div class="container-fluid text-center py-5 px-0 w-100">
+          <div class="container-fluid text-center py-3 px-0 w-100">
             <div class="row h-100 w-100 p-0 m-0">
-              <div class="col-md-6 cold-sm-1">
+              <div class="col-lg-6 mb-3">
                 <div class="card h-100 w-100">
-                  <div class="row g-0 h-100">
+                  <div class="row g-0 h-100 reverse">
                     <div class="col-md-6">
                       <img
                         src="../Trabajo/imagenes/zona6.jpeg"
@@ -165,19 +167,18 @@
                       <div class="card-body">
                         <p class="card-text text-start fs-7">
                           ¡Bienvenido a nuestro espacio de diversión y
-                          entretenimiento definitivo! En nuestra web,
-                          encontrarás un paraíso para los amantes de los
-                          videojuegos, donde podrás sumergirte en una
-                          experiencia única.
+                          entretenimiento definitivo! Encontrarás un paraíso
+                          para los amantes de los videojuegos, donde podrás
+                          sumergirte en una experiencia única.
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col-lg-6 mb-3">
                 <div class="card h-100 w-100">
-                  <div class="row g-0 h-100">
+                  <div class="row g-0 h-100 reverse">
                     <div class="col-md-6">
                       <img
                         src="../Trabajo/imagenes/foto7.jpg"
@@ -209,9 +210,7 @@
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3"
       >
-        <p class="col-md-4 mb-0 text-body-secondary fs-5">
-          © 2024 Club del mal.
-        </p>
+        <p class="col-md-4 mb-0 fs-5 text-white">© 2024 Club del mal.</p>
 
         <a class="bi" width="40" height="32" href="#">
           <img
@@ -225,20 +224,16 @@
 
         <ul class="nav col-lg-6 col-md-4 col-sm-6 justify-content-end">
           <li class="nav-item">
-            <a href="#" class="nav-link text-body-secondary fs-5"
+            <a href="#" class="nav-link text-white fs-5"
               >Política de privacidad</a
             >
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link text-body-secondary fs-5"
-              >Política de cookies</a
-            >
+            <a href="#" class="nav-link text-white fs-5">Política de cookies</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link text-body-secondary fs-5"
-              >Aviso legal</a
-            >
+            <a href="#" class="nav-link text-white fs-5">Aviso legal</a>
           </li>
         </ul>
       </footer>
