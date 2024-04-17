@@ -119,19 +119,19 @@
     <!--fin de nav-->
     <!--cuerpo del div padre-->
     <div
-      class="container-fluid border border-black"
-      style="border: 1px solid orange !important"
+      class="container-fluid"
     >
       <!--seccion1-->
       <!--aqui estaba el mx-5 y el container, lo hemos cambiado por c-fluid-->
       <!--quitar el height, border todo css en hoja externa-->
-      <div class="container-fluid border border-danger">
-        <div class="container-fluid border border-primary">
+      <div class="container-fluid ">
+        <div class="container-fluid ">
           <div
             class="text-white p-3 rounded text-center"
             style="background-image: url('../TrabajoReal/IMAGES/fondo1.jpg')"
           >
-            <q class="fs-2">
+          <!--NO ME FUNCIONA LO DEL BLUR XD-->
+            <q class="fs-2" style="backdrop-filter: blur(100px);">
               Debemos creer que estamos dotados para algo y que esto debe
               lograrse. — <cite>Marie Curie</cite>
             </q>
@@ -142,8 +142,8 @@
       <!--seccion2-->
       <!--aqui estaba el mx-5 y el container, lo hemos cambiado por c-fluid-->
       <!--quitar el height, border,, todo css en hoja externa-->
-      <div class="container-fluid border border-danger">
-        <div class="container-fluid border border-primary">
+      <div class="container-fluid">
+        <div class="container-fluid">
           <div class="container-fluid">
             <!--PRIMER CONTAINER-->
             <div class="container-fluid">
@@ -173,12 +173,14 @@
                   </p>
                 </div>
                 <!-- Columna-imagen-drch -->
-                <div class="col-md-6">
-                  <img
-                    src="../TrabajoReal/IMAGES/foto1.jpg"
-                    alt="imagen de diseño"
-                    class="img-fluid"
-                  />
+                <div class="col-md-6 border-black" >
+                  <div class="col-md-6" style="display: block; justify-content: center; width: 100%;">
+                    <img
+                      src="../TrabajoReal/IMAGES/foto1.jpg"
+                      alt="imagen de diseño"
+                      class="img-fluid"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -189,23 +191,25 @@
       <!--seccion3-->
       <!--aqui estaba el mx-5 y el container, lo hemos cambiado por c-fluid-->
       <!--quitar el height, border todo css en hoja externa-->
-      <div class="container-fluid border border-danger">
-        <div class="container-fluid border border-primary">
+      <div class="container-fluid">
+        <div class="container-fluid">
           <div class="container-fluid">
             <!--SEGUNDO CONTAINER EXPERIENCIA-->
             <div class="container-fluid">
-              <div class="row align-items-center mt-4 mb-40">
+              <div class="row align-items-center mt-4 mb-4">
                 <!-- Columna-imagen-izq -->
-                <div class="col-md-6">
-                  <img
-                    src="../TrabajoReal/IMAGES/foto4.jpg"
-                    alt="programando un videojuego"
-                    class="img-fluid"
-                  />
+                <div class="col-md-6 mb-4 mt-4">
+                  <div class="col-md-6" style="display: block; justify-content: center; width: 100%;">
+                    <img
+                      src="../TrabajoReal/IMAGES/foto4.jpg"
+                      alt="programando un videojuego"
+                      class="img-fluid"
+                    />
+                  </div>
                 </div>
                 <!-- Columna-texto-drch -->
-                <div class="col-md-6">
-                  <h2 class="text-center mt-4 mb-40">EXPERIENCIA</h2>
+                <div class="col-md-6 mb-4">
+                  <h2 class="text-center mt-4 mb-4">EXPERIENCIA</h2>
                   <p class="fs-5">
                     Nuestro equipo está compuesto por un grupo de jóvenes
                     estudiantes apasionados por el mundo digital. Cada uno de
@@ -234,15 +238,15 @@
       <!--seccion4-->
       <!--aqui estaba el mx-5 y el container, lo hemos cambiado por c-fluid-->
       <!--quitar el height, border todo css en hoja externa-->
-      <div class="container-fluid border border-danger">
-        <div class="container-fluid border border-primary">
+      <div class="container-fluid">
+        <div class="container-fluid">
           <div class="container-fluid">
             <!--TRES CARTAS CON FORM, YOU Y SERV-->
             <div class="container-fluid mt-4 mb-4">
               <div class="row">
                 <!-- CARTA PARA FORMULARIO-->
                 <div class="col-md-4 mb-3">
-                  <div class="card h-100">
+                  <div class="card h-100 ">
                     <img
                       src="../TrabajoReal/IMAGES/foto2.jpg"
                       alt="un mando conectado a un ordenador"
