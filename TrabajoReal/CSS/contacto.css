@@ -1,3 +1,11 @@
 .h-40 {
   height: 40vh;
 }
+.col-md-4 mb-3 {
+  justify-content: center;
+  align-items: center;
+}
+
+.mb-4 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
