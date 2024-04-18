@@ -1,5 +1,6 @@
 .fs-7 {
-  font-size: 1.125rem;
+  font-size: calc(0.75rem + 0.5vw);
+  text-align: justify;
 }
 
 #miDiv {
@@ -23,7 +24,7 @@
 }
 @media screen and (min-width: 667px) {
   #miDiv {
-    height: 45vh;
+    height: 62vh;
   }
 }
 @media screen and (min-width: 1200px) {
