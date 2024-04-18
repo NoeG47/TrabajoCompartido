@@ -80,115 +80,110 @@
     <!--quitar el height, border todo css en hoja externa-->
     <div class="container-fluid ">
       <!--para centrarlo y el md 8 para el margen-->
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="container-fluid ">
-            <!--añadir cosas aqui, debajo-->
-            <div class="formulario">
-              <div class="container-fluid">
-                <h1 class="mb-4">Registro</h1>
-                <form class="needs-validation" novalidate>
-                  <div class="row">
-                    <div class="col-md-4 mb-3 ">
-                      <label for="validationCustom01">Nombre</label>
-                      <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
-                      <div class="invalid-feedback">
-                        Por favor introduzca el Nombre.
-                      </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <label for="validationCustom02">Apellido</label>
-                      <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido" required>
-                      <div class="invalid-feedback">
-                        Porfavor introduzca el Apellido.
-                      </div>
-                    </div>
-                    <div class="col-md-5 mb-3">
-                      <label for="validationCustom02">Email</label>
-                      <input type="email" class="form-control" id="validationCustom02" placeholder="Email" required>
-                      <div class="invalid-feedback">
-                        Porfavor introduzca el Email.
-                      </div>
-                    </div>
-                    <div class="col-md-5 mb-3">
-                      <label for="validationCustom09">Telefono</label>
-                      <input type="phone" class="form-control" id="form_phone" min="9" max="9" name="telefono"
-                        pattern="[6,7,9]{1} \d{2} \d{3} \d{3} " placeholder="555 555 555" required>
-                      <div class="invalid-feedback">
-                        Porfavor introduzca el numero de telefono.
-                      </div>
-                    </div>
+
+      <div class="container-fluid ">
+        <!--añadir cosas aqui, debajo-->
+        <div class="formulario">
+          <div class="container-fluid">
+            <h1 class="mb-4">Registro</h1>
+            <form class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-md-4 mb-3 ">
+                  <label for="validationCustom01">Nombre</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+                  <div class="invalid-feedback">
+                    Por favor introduzca el Nombre.
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom02">Apellido</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido" required>
+                  <div class="invalid-feedback">
+                    Porfavor introduzca el Apellido.
+                  </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                  <label for="validationCustom02">Email</label>
+                  <input type="email" class="form-control" id="validationCustom02" placeholder="Email" required>
+                  <div class="invalid-feedback">
+                    Porfavor introduzca el Email.
+                  </div>
+                </div>
+                <div class="col-md-5 mb-3">
+                  <label for="validationCustom09">Telefono</label>
+                  <input type="phone" class="form-control" id="form_phone" min="9" max="9" name="telefono"
+                    pattern="[6,7,9]{1} \d{2} \d{3} \d{3} " placeholder="555 555 555" required>
+                  <div class="invalid-feedback">
+                    Porfavor introduzca el numero de telefono.
+                  </div>
+                </div>
 
 
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 mb-3">
-                      <label for="validationCustom03">Ciudad</label>
-                      <input type="text" class="form-control" id="validationCustom03" placeholder="ciudad" required>
-                      <div class="invalid-feedback">
-                        Porfavor introduzca la ciudad.
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <label for="validationCustom04">País</label>
-                      <input type="text" class="form-control" id="validationCustom04" placeholder="País" required>
-                      <div class="invalid-feedback">
-                        Porfavor introduzca el País.
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <label for="validationCustom05">mensaje</label>
-                      <textarea class="form-control" id="validationCustom05"
-                        placeholder="escriba que inforamcion quiere recibir" required maxlength="300" minlength="25"
-                        aria-describedby="passwordHelpInline"></textarea>
-                      <small id="validationCustom04" class="text-muted">
-                        Debe de tener minimo 25 palabras.
-                      </small>
-                      <div class="invalid-feedback">
-                        Porfavor,introduzca el mensaje.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                      <label class="form-check-label" for="invalidCheck">
-                        Acepta los terminos de privacidad.
-                      </label>
-                      <div class="invalid-feedback">
-                        Tienes qaue aceptar si o si.
-                      </div>
-                    </div>
-                  </div>
-                  <button class="btn btn-primary" type="submit">Enviar</button>
-                  <button class="btn btn-danger" type="reset">Cancelar</button>
-                </form>
               </div>
-              <script>
-                // Example starter JavaScript for disabling form submissions if there are invalid fields
-                (function () {
-                  'use strict';
-                  window.addEventListener('load', function () {
-                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                    var forms = document.getElementsByClassName('needs-validation');
-                    // Loop over them and prevent submission
-                    var validation = Array.prototype.filter.call(forms, function (form) {
-                      form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                          event.preventDefault();
-                          event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                      }, false);
-                    });
-                  }, false);
-                })();
-              </script>
-            </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationCustom03">Ciudad</label>
+                  <input type="text" class="form-control" id="validationCustom03" placeholder="ciudad" required>
+                  <div class="invalid-feedback">
+                    Porfavor introduzca la ciudad.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="validationCustom04">País</label>
+                  <input type="text" class="form-control" id="validationCustom04" placeholder="País" required>
+                  <div class="invalid-feedback">
+                    Porfavor introduzca el País.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="validationCustom05">mensaje</label>
+                  <textarea class="form-control" id="validationCustom05"
+                    placeholder="escriba que inforamcion quiere recibir" required maxlength="300" minlength="25"
+                    aria-describedby="passwordHelpInline"></textarea>
+                  <small id="validationCustom04" class="text-muted">
+                    Debe de tener minimo 25 palabras.
+                  </small>
+                  <div class="invalid-feedback">
+                    Porfavor,introduzca el mensaje.
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Acepta los terminos de privacidad.
+                  </label>
+                  <div class="invalid-feedback">
+                    Tienes qaue aceptar si o si.
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit">Enviar</button>
+              <button class="btn btn-danger" type="reset">Cancelar</button>
+            </form>
           </div>
+          <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+              'use strict';
+              window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                  form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+          </script>
         </div>
-
-
       </div>
     </div>
     <!--fin de seccion 1-->
