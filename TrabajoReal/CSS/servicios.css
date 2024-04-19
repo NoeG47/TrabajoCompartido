@@ -10,6 +10,6 @@
 /* mediaQuery*/
 @media only screen and (max-width: 450px) {
   .sz-image {
-    height: 16rem;
+    height: 12rem;
   }
 }
