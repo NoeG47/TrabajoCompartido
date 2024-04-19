@@ -8,27 +8,66 @@
 }
 
 .card {
-  border: 1px solid #0050fb !important;
+  border: none !important;
+}
+.imgs {
+  aspect-ratio: 6/2;
+  object-fit: contain;
+  width: 100%;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.imgs:hover {
+  filter: grayscale(0%);
+}
+.img-card1 {
+  border-radius: 56% 44% 72% 28% / 44% 64% 36% 56% !important;
+}
+.img-card2 {
+  border-radius: 24% 76% 33% 67% / 73% 21% 79% 27% !important;
 }
 
+.img-card1:hover {
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% !important;
+  transition: all 1s ease-in-out;
+}
+.img-card2:hover {
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% !important;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.hr1 {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgb(98 0 255),
+    rgba(0, 0, 0, 0)
+  );
+}
 /* mediaQuery*/
 @media only screen and (max-width: 767px) {
   .reverse {
     flex-direction: column-reverse;
   }
 }
-@media screen and (min-width: 375px) {
+
+@media screen and (min-width: 667px) and (min-height: 375px) {
   #miDiv {
-    height: 25vh;
-  }
-}
-@media screen and (min-width: 667px) {
-  #miDiv {
-    height: 62vh;
+    height: 64vh;
   }
 }
 @media screen and (min-width: 1200px) {
   #miDiv {
     height: 60vh;
+  }
+}
+@media screen and (min-height: 1200px) {
+  #miDiv {
+    height: 25vh;
   }
 }
