@@ -1,9 +1,3 @@
-.cont {
-  width: 80%;
-  height: 40vh;
-  margin: auto;
-}
-
 /* mediaQuery*/
 @media only screen and (max-width: 767px) {
   .reverse {

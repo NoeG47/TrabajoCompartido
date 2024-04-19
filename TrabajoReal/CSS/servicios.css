@@ -1,0 +1,15 @@
+.sz-image {
+  height: 26rem;
+}
+/* mediaQuery*/
+@media only screen and (max-width: 900px) {
+  .reverse {
+    flex-direction: column-reverse;
+  }
+}
+/* mediaQuery*/
+@media only screen and (max-width: 450px) {
+  .sz-image {
+    height: 16rem;
+  }
+}
