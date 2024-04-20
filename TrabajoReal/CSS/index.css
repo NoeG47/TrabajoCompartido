@@ -6,7 +6,10 @@
 #miDiv {
   width: 100%;
 }
-
+.dragon-icon {
+  aspect-ratio: 10 / 2;
+  object-fit: contain;
+}
 .card {
   border: none !important;
 }
@@ -16,6 +19,10 @@
   width: 100%;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
+  -webkit-transition: filter 0.3s ease;
+  -moz-transition: filter 0.3s ease;
+  -ms-transition: filter 0.3s ease;
+  -o-transition: filter 0.3s ease;
 }
 .imgs:hover {
   filter: grayscale(0%);
@@ -30,6 +37,10 @@
 .img-card1:hover {
   border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% !important;
   transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .img-card2:hover {
   border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% !important;
@@ -38,6 +49,10 @@
   -moz-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
+}
+.btn-bg:hover {
+  background: -webkit-linear-gradient(90deg, #4221fd 0%, #b721ff 100%);
+  border: transparent 1px solid;
 }
 .hr1 {
   border: 0;
@@ -58,7 +73,7 @@
 
 @media screen and (min-width: 667px) and (min-height: 375px) {
   #miDiv {
-    height: 64vh;
+    height: 55vh;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -69,5 +84,11 @@
 @media screen and (min-height: 1200px) {
   #miDiv {
     height: 25vh;
+  }
+}
+@media screen and (max-width: 750px) {
+  .dragon-icon {
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
   }
 }

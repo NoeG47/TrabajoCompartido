@@ -17,6 +17,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,11 +31,11 @@
   </head>
   <body>
     <!--<p>http://127.0.0.1:5500/Trabajo/inicio.html</p>-->
-    <div class="container-fluid">
+    <div class="container-fluid sticky-top bg-white">
       <div class="container-fluid">
         <!--nav-->
         <nav
-          class="navbar navbar-expand-md navbar sticky-top"
+          class="navbar navbar-expand-md navbar"
           aria-label="Fourth navbar example"
         >
           <div class="container-fluid">
@@ -87,12 +88,16 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item fs-5" href="Servicios.html"
+                      <a
+                        class="dropdown-item fs-5"
+                        href="Servicios.html#defCafeteria"
                         >Cafetería</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item fs-5" href="Servicios.html"
+                      <a
+                        class="dropdown-item fs-5"
+                        href="Servicios.html#defZona"
                         >Zona gaming</a
                       >
                     </li>
@@ -116,11 +121,11 @@
         </nav>
       </div>
     </div>
-    <!--fin de prueba-->
-    <!--cuerpo del index div padre-->
+    <!--fin de nav-->
+    <!--cuerpo del div padre-->
     <div class="container-fluid">
       <!--div del carrousel-->
-      <!--aqui estaba el mx-5 y el container, lo hemos cambiado por c-fluid-->
+
       <div class="container-fluid slider" id="miDiv">
         <div class="container-fluid h-100">
           <!--añadir aqui-->
@@ -130,25 +135,25 @@
             data-bs-ride="carousel"
           >
             <div class="carousel-inner h-100">
-              <div class="carousel-item active h-100" data-bs-interval="3000">
+              <div class="carousel-item active h-100" data-bs-interval="5000">
                 <img
                   src="../TrabajoReal/IMAGES/slider4.jpg"
                   class="d-block w-100 h-100 rounded"
-                  alt="..."
+                  alt="Setup"
                 />
               </div>
-              <div class="carousel-item h-100" data-bs-interval="3000">
+              <div class="carousel-item h-100" data-bs-interval="5000">
                 <img
                   src="../TrabajoReal/IMAGES/slider1.jpg"
                   class="d-block w-100 h-100 rounded"
-                  alt="..."
+                  alt="Programadores"
                 />
               </div>
-              <div class="carousel-item h-100" data-bs-interval="3000">
+              <div class="carousel-item h-100" data-bs-interval="5000">
                 <img
                   src="../TrabajoReal/IMAGES/slider3.jpg"
                   class="d-block w-100 h-100 rounded"
-                  alt="..."
+                  alt="Gafas virtuales"
                 />
               </div>
             </div>
@@ -157,8 +162,6 @@
       </div>
       <!--fin carrousel-->
       <!--seccion2-->
-      <!--aqui estaba el mx-5 y el container, lo hemos cambiado por c-fluid-->
-      <!--quitar el height, border,, todo css en hoja externa-->
       <div class="container-fluid">
         <div class="container-fluid align-content-center px-0">
           <!--añadir cosas aqui, debajo-->
@@ -176,12 +179,20 @@
                     </div>
                     <div class="col-md-6">
                       <div class="card-body h-100 align-content-center">
+                        <h1 class="h3 text-start merienda bg-text">
+                          ¡Descubre Nuevas Aventuras!
+                        </h1>
                         <p class="card-text fs-5 py-0 text-start">
-                          ¡Bienvenido a nuestro espacio de diversión y
-                          entretenimiento definitivo! Encontrarás un paraíso
-                          para los amantes de los videojuegos, donde podrás
-                          sumergirte en una experiencia única.
+                          En este rincón especial, te invitamos a sumergirte en
+                          un mundo de posibilidades infinitas. Conecta con tu
+                          espíritu aventurero y descubre nuevas emociones en
+                          cada esquina.
                         </p>
+                        <a
+                          href="Servicios.html#defZona"
+                          class="btn btn-primary fs-5 btn-bg"
+                          >Leer más</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -199,12 +210,20 @@
                     </div>
                     <div class="col-md-6">
                       <div class="card-body h-100 align-content-center">
+                        <h2 class="h3 text-start merienda bg-text">
+                          Encuentra tu lugar
+                        </h2>
                         <p class="card-text fs-5 py-0 text-start">
-                          Además de la emoción de los videojuegos, te invitamos
-                          a explorar nuestras áreas de cafetería y ocio, donde
-                          podrás relajarte, socializar y disfrutar de una
-                          variedad de juegos de mesa.
+                          ¿Buscas un momento de tranquilidad entre tanta acción?
+                          Nuestra acogedora cafetería te espera. Toma asiento,
+                          relájate y disfruta de conversaciones animadas
+                          mientras recargas energías para tu próxima aventura.
                         </p>
+                        <a
+                          href="Servicios.html#defCafeteria"
+                          class="btn btn-primary fs-5 btn-bg"
+                          >Leer más</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -215,6 +234,51 @@
         </div>
       </div>
       <!--fin de seccion 2-->
+      <!--Seccion 3-->
+      <div class="container-fluid">
+        <div class="container-fluid">
+          <!--añadir cosas aqui, debajo-->
+          <div class="container text-center">
+            <div class="row align-items-center">
+              <!-- Columna-texto-izq -->
+              <div class="col-md-12">
+                <h2 class="h3 text-center merienda bg-text">
+                  ¡Únete a la Diversión!
+                </h2>
+                <p class="fs-5 text-center">
+                  No pierdas la oportunidad de formar parte de nuestra vibrante
+                  comunidad de entusiastas del entretenimiento. En nuestro
+                  espacio, la diversión nunca se detiene y siempre hay algo
+                  emocionante que descubrir. Ven y únete a nosotros mientras
+                  exploramos juntos un mundo lleno de aventuras y momentos
+                  inolvidables. ¡Te esperamos para que juntos creemos recuerdos
+                  que durarán toda la vida!
+                </p>
+
+                <div class="container">
+                  <img
+                    src="../TrabajoReal/IMAGES/dragon.png"
+                    alt="dragon"
+                    class="w-100 dragon-icon"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="¿Qué estás esperando?"
+                >
+                  ¡Únete ya!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fin de seccion 3-->
+      <!--Seccion 4-->
       <div class="container-fluid">
         <div class="container-fluid">
           <!--añadir cosas aqui, debajo-->
@@ -269,6 +333,7 @@
           </div>
         </div>
       </div>
+      <!--Fin de la seccion 4-->
     </div>
     <!--aqui empieza el footer-->
     <div class="container-fluid">
@@ -278,7 +343,7 @@
         >
           <p class="col-md-4 mb-0 fs-5 text-dark">Club del mal © 2024</p>
 
-          <a class="bi" width="40" height="32" href="#">
+          <a class="bi" width="40" height="32" href="Index.html">
             <img
               src="../TrabajoReal/IMAGES/logo.png"
               alt="Logo"
@@ -313,5 +378,18 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
   </body>
 </html>

@@ -28,11 +28,11 @@
 
   <body>
     <!--<p>http://127.0.0.1:5500/Trabajo/inicio.html</p>-->
-    <div class="container-fluid">
+    <div class="container-fluid sticky-top bg-white">
       <div class="container-fluid">
         <!--nav-->
         <nav
-          class="navbar navbar-expand-md navbar sticky-top"
+          class="navbar navbar-expand-md navbar"
           aria-label="Fourth navbar example"
         >
           <div class="container-fluid">
@@ -85,12 +85,16 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item fs-5" href="Servicios.html"
+                      <a
+                        class="dropdown-item fs-5"
+                        href="Servicios.html#defCafeteria"
                         >Cafetería</a
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item fs-5" href="Servicios.html"
+                      <a
+                        class="dropdown-item fs-5"
+                        href="Servicios.html#defZona"
                         >Zona gaming</a
                       >
                     </li>
@@ -132,7 +136,7 @@
               <h1 class="mb-4">Registro</h1>
               <form class="needs-validation" novalidate>
                 <div class="row">
-                  <div class="col-md-4 mb-3">
+                  <div class="col-md-6 mb-3">
                     <label for="validationCustom01">Nombre</label>
                     <input
                       type="text"
@@ -145,7 +149,7 @@
                       Por favor introduzca el Nombre.
                     </div>
                   </div>
-                  <div class="col-md-4 mb-3">
+                  <div class="col-md-6 mb-3">
                     <label for="validationCustom02">Apellido</label>
                     <input
                       type="text"
@@ -158,7 +162,7 @@
                       Porfavor introduzca el Apellido.
                     </div>
                   </div>
-                  <div class="col-md-5 mb-3">
+                  <div class="col-md-6 mb-3">
                     <label for="validationCustom03">Email</label>
                     <input
                       type="email"
@@ -171,7 +175,7 @@
                       Porfavor introduzca el Email.
                     </div>
                   </div>
-                  <div class="col-md-5 mb-3">
+                  <div class="col-md-6 mb-3">
                     <label for="validationCustom04">Telefono</label>
                     <input
                       type="phone"
@@ -217,11 +221,11 @@
                     </div>
                   </div>
                   <div class="col-md-6 mb-3">
-                    <label for="validationCustom07">mensaje</label>
+                    <label for="validationCustom07">Mensaje</label>
                     <textarea
                       class="form-control"
                       id="validationCustom07"
-                      placeholder="escriba que inforamcion quiere recibir"
+                      placeholder="Escriba que información quiere recibir"
                       required
                       maxlength="300"
                       minlength="25"
@@ -248,7 +252,7 @@
                       Acepta los terminos de privacidad.
                     </label>
                     <div class="invalid-feedback">
-                      Tienes qaue aceptar si o si.
+                      Tienes que aceptar si o si.
                     </div>
                   </div>
                 </div>
