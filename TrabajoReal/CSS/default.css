@@ -26,6 +26,16 @@ body {
   font-weight: bold;
   font-style: normal;
 }
+.hr1 {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgb(98 0 255),
+    rgba(0, 0, 0, 0)
+  );
+}
 a.nav-link {
   color: #0400ff;
 }
