@@ -1,0 +1,11 @@
+:root {
+  --bd-violet-bg: #8a2be2;
+  --bs-white: #fff;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bd-violet-bg) !important;
+  --bs-tooltip-color: var(--bs-white) !important;
+}
+
+/*# sourceMappingURL=indexCompilado.css.map */
