@@ -1,0 +1,87 @@
+.cara {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  aspect-ratio: 1/1;
+  background-color: rgb(255, 213, 0);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  outline: 13px solid rgb(255, 166, 0);
+  border: 13px solid rgb(255, 187, 0, 0.926);
+  box-shadow: 1px 1px 1rem black;
+}
+.ojos {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ojoIzquierdo,
+.ojoDerecho {
+  width: 45%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 1px 1px 1rem gray;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.pupilaIzquierda,
+.pupilaDerecha {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+}
+.boca {
+  width: 130px;
+  height: 30px;
+  border-radius: 100px;
+  background: radial-gradient(rgb(174, 125, 33), rgb(121, 81, 5));
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  margin-bottom: 80px;
+  border: 2px solid rgb(244, 205, 113);
+  border-style: inset;
+}
+@media (max-width: 600px) {
+  .cara {
+    max-width: 300px; /* Reduce el tamaño máximo de la cara */
+    outline: 8px solid rgb(255, 166, 0); /* Ajusta el grosor del borde exterior */
+    border: 8px solid rgba(255, 187, 0, 0.926); /* Ajusta el borde interior */
+  }
+  .ojos {
+    width: 70%; /* Ajusta la anchura de la sección de los ojos */
+    height: 60%; /* Ajusta la altura de la sección de los ojos */
+  }
+  .ojoIzquierdo,
+  .ojoDerecho {
+    width: 40%; /* Ajusta el ancho de cada ojo */
+  }
+  .pupilaIzquierda,
+  .pupilaDerecha {
+    width: 30px; /* Ajusta el tamaño de las pupilas */
+    height: 30px;
+  }
+  .boca {
+    width: 100px; /* Ajusta el ancho de la boca */
+    height: 25px; /* Ajusta la altura de la boca */
+    margin-bottom: 50px; /* Ajusta el margen inferior */
+  }
+}

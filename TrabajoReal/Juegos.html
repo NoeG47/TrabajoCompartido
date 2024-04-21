@@ -3,20 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quienes Somos</title>
+    <title>Juegos</title>
     <link
       rel="icon"
       type="image/x-icon"
       href="../TrabajoReal/IMAGES/logo.ico"
     />
+    <link rel="stylesheet" href="CSS/piedraPapelTijera.css" />
+    <link rel="stylesheet" href="CSS/carita.css" />
     <link rel="stylesheet" href="CSS/default.css" />
-    <link rel="stylesheet" href="CSS/quiene_somos.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -77,7 +79,7 @@
 
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle fs-5"
+                    class="nav-link active dropdown-toggle fs-5"
                     href="Servicios.html"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -109,7 +111,7 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active fs-5" href="Quienes_somos.html"
+                  <a class="nav-link fs-5" href="Quienes_somos.html"
                     >Conócenos</a
                   >
                 </li>
@@ -125,198 +127,123 @@
     <!--fin de nav-->
     <!--cuerpo del div padre-->
     <div class="container-fluid">
-      <!--seccion1-->
-      <!--aqui estaba el mx-5 y el container, lo hemos cambiado por c-fluid-->
-      <!--quitar el height, border todo css en hoja externa-->
-      <div class="container-fluid">
-        <div class="container-fluid pb-2">
-          <div
-            class="text-white p-3 rounded text-center"
-            style="background-image: url('../TrabajoReal/IMAGES/fondo1.jpg')"
-          >
-            <q class="fs-2 blur">
-              Debemos creer que estamos dotados para algo y que esto debe
-              lograrse. — <cite>Marie Curie</cite>
-            </q>
-          </div>
-        </div>
-      </div>
-      <!--fin de seccion 1-->
-      <!--seccion2-->
-      <!--aqui estaba el mx-5 y el container, lo hemos cambiado por c-fluid-->
-      <!--quitar el height, border,, todo css en hoja externa-->
+      <!--seccion 2-->
       <div class="container-fluid">
         <div class="container-fluid">
-          <div class="container-fluid">
-            <!--PRIMER CONTAINER-->
-            <div class="container-fluid">
-              <div class="row align-items-center">
-                <!-- Columna-texto-izq -->
-                <div class="col-md-6">
-                  <h2 class="text-center m-2 mt-3 merienda bg-text">
-                    CONÓCENOS
-                  </h2>
-                  <p class="fs-5">
-                    Somos un apasionado grupo de jugadores que se han unido para
-                    crear una comunidad acogedora en el corazón de Madrid. En el
-                    Club del Mal, nos dedicamos a celebrar la diversidad y la
-                    emoción de los videojuegos en todas sus formas. Desata tu
-                    creatividad y estudia en el mejor club de videojuegos de la
-                    Comunidad de Madrid. Somos un proyecto que busca despertar
-                    la ilusión por jugar.
-                  </p>
-
-                  <p class="fs-5">
-                    En el Club del Mal, organizamos una amplia variedad de
-                    actividades mensuales o semanales para nuestros miembros.
-                    Desde torneos competitivos o eventos especiales de
-                    lanzamiento. Nos esforzamos por ofrecer experiencias para
-                    todos los gustos y preferencias. Además de nuestras
-                    actividades en línea, también contamos con un espacio físico
-                    dedicado en Madrid, donde nuestros miembros pueden reunirse,
-                    socializar y sumergirse en la cultura de los videojuegos.
-                  </p>
+          <!--añadir cosas aqui, debajo-->
+          <h1 class="h1 merienda bg-text text-center">
+            CSS Piedra-Papel-Tijeras
+          </h1>
+          <div class="container py-5">
+            <div class="cara" id="cara">
+              <div class="ojos">
+                <div class="ojoIzquierdo">
+                  <div class="pupilaIzquierda pupila"></div>
                 </div>
-                <!-- Columna-imagen-drch -->
-                <div class="col-md-6 mb-4 mt-4">
-                  <div class="col-md-6 d-block justify-content-center w-100">
-                    <img
-                      src="../TrabajoReal/IMAGES/foto1.jpg"
-                      alt="imagen de diseño"
-                      class="img-fluid"
-                    />
-                  </div>
+                <div class="ojoDerecho">
+                  <div class="pupilaDerecha pupila"></div>
                 </div>
               </div>
+              <div class="boca"></div>
             </div>
           </div>
         </div>
       </div>
       <!--fin de seccion 2-->
-      <!--seccion3-->
-      <!--aqui estaba el mx-5 y el container, lo hemos cambiado por c-fluid-->
-      <!--quitar el height, border todo css en hoja externa-->
+      <!--seccion 1-->
       <div class="container-fluid">
         <div class="container-fluid">
-          <div class="container-fluid">
-            <!--SEGUNDO CONTAINER EXPERIENCIA-->
-            <div class="container-fluid">
-              <div class="row align-items-center reverse">
-                <!-- Columna-imagen-izq -->
-                <div class="col-md-6 mb-4 mt-4">
-                  <div class="col-md-6 d-block justify-content-center w-100">
-                    <img
-                      src="../TrabajoReal/IMAGES/foto4.jpg"
-                      alt="programando un videojuego"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-                <!-- Columna-texto-drch -->
-                <div class="col-md-6">
-                  <h2 class="text-center m-2 mt-4 merienda bg-text">
-                    EXPERIENCIA
-                  </h2>
-                  <p class="fs-5">
-                    Nuestro equipo está compuesto por un grupo de jóvenes
-                    estudiantes apasionados por el mundo digital. Cada uno de
-                    nosotros aporta una perspectiva única sobre los videojuegos.
-                    Nos enorgullecemos de ofrecer una experiencia única para
-                    todos nuestros miembros. Ya sea que seas un veterano de la
-                    industria o un novato curioso, siempre tendrás un lugar en
-                    nuestra comunidad.
-                  </p>
-                  <p class="fs-5">
-                    Nuestra misión es ofrecer un servicio de calidad, con
-                    amplias instalaciones que inspire confianza y compañerismo
-                    con el resto de personas de nuestro grupo. En el Club del
-                    Mal no solo jugamos, sino que creamos recuerdos. Esta
-                    experiencia pretende ir más allá de los videojuegos y busca
-                    generar nuevas amistades y fortalecer la conexión con los
-                    compañeros.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--fin de seccion 3-->
-      <!--seccion4-->
-      <!--aqui estaba el mx-5 y el container, lo hemos cambiado por c-fluid-->
-      <!--quitar el height, border todo css en hoja externa-->
-      <div class="container-fluid">
-        <div class="container-fluid">
-          <div class="container-fluid">
-            <!--TRES CARTAS CON FORM, YOU Y SERV-->
-            <div class="container-fluid mt-4 mb-4">
-              <div class="row">
-                <!-- CARTA PARA FORMULARIO-->
-                <div class="col-md-4 mb-3">
-                  <div class="card h-100">
-                    <img
-                      src="../TrabajoReal/IMAGES/foto2.jpg"
-                      alt="un mando conectado a un ordenador"
-                    />
+          <!--añadir cosas aqui, debajo-->
+          <form>
+            <input
+              type="radio"
+              id="piedra-piedra"
+              name="piedra-papel-tijeras"
+            />
+            <input type="radio" id="piedra-papel" name="piedra-papel-tijeras" />
+            <input
+              type="radio"
+              id="piedra-tijeras"
+              name="piedra-papel-tijeras"
+            />
+            <input type="radio" id="papel-piedra" name="piedra-papel-tijeras" />
+            <input type="radio" id="papel-papel" name="piedra-papel-tijeras" />
+            <input
+              type="radio"
+              id="papel-tijeras"
+              name="piedra-papel-tijeras"
+            />
+            <input
+              type="radio"
+              id="tijeras-piedra"
+              name="piedra-papel-tijeras"
+            />
+            <input
+              type="radio"
+              id="tijeras-papel"
+              name="piedra-papel-tijeras"
+            />
+            <input
+              type="radio"
+              id="tijeras-tijeras"
+              name="piedra-papel-tijeras"
+            />
 
-                    <div class="card-body text-center">
-                      <h5 class="card-title">Contacta con nosotros</h5>
-                      <p class="card-text">
-                        Escríbenos para poder acceder a nuestros servicios
-                      </p>
-                      <a href="Contacto.html" class="btn btn-primary"
-                        >Formulario de inscripción</a
-                      >
-                    </div>
-                  </div>
+            <div>
+              <div id="manos">
+                <div class="mano" id="mano-computadora">
+                  <div class="puño"></div>
+                  <div class="dedo dedo-1"></div>
+                  <div class="dedo dedo-2"></div>
+                  <div class="dedo dedo-3"></div>
+                  <div class="dedo dedo-4"></div>
+                  <div class="pulgar"></div>
+                  <div class="brazo"></div>
                 </div>
-                <!-- CARTA CON ENLACE -->
-                <div class="col-md-4 mb-3">
-                  <div class="card h-100">
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/HgHR-msDejQ?si=kxG6Sh2KzXmTxw6v"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                      class="h-100 w-100"
-                    ></iframe>
-                    <div class="card-body text-center">
-                      <h5 class="card-title">Conoce nuestras redes sociales</h5>
-                      <p class="card-text">
-                        Tenemos canal de Youtube disponible
-                      </p>
-                    </div>
-                  </div>
+
+                <div class="mano" id="mano-usuario">
+                  <div class="puño"></div>
+                  <div class="dedo dedo-1"></div>
+                  <div class="dedo dedo-2"></div>
+                  <div class="dedo dedo-3"></div>
+                  <div class="dedo dedo-4"></div>
+                  <div class="pulgar"></div>
+                  <div class="brazo"></div>
                 </div>
-                <!-- CARTA HACIA NUESTRAS INSTALACIONES -->
-                <div class="col-md-4 mb-3">
-                  <div class="card h-100">
-                    <img
-                      src="../TrabajoReal/IMAGES/foto7.jpg"
-                      alt="cafetería del club del mal"
-                    />
-                    <div class="card-body text-center">
-                      <h5 class="card-title">Visita nuestras instalaciones</h5>
-                      <p class="card-text">
-                        ¡Te esperamos para vivir la experiencia definitiva de
-                        los videojuegos en Madrid!
-                      </p>
-                      <a href="Servicios.html" class="btn btn-primary"
-                        >Nuestros Servicios</a
-                      >
-                    </div>
+
+                <div id="iconos">
+                  <div>
+                    <label for="piedra-piedra">✊</label>
+                    <label for="papel-piedra">✊</label>
+                    <label for="tijeras-piedra">✊</label>
+                  </div>
+                  <div>
+                    <label for="piedra-papel">🖐️</label>
+                    <label for="papel-papel">🖐️</label>
+                    <label for="tijeras-papel">🖐️</label>
+                  </div>
+                  <div>
+                    <label for="piedra-tijeras">✌</label>
+                    <label for="papel-tijeras">✌</label>
+                    <label for="tijeras-tijeras">✌</label>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+
+            <div id="mensaje">
+              <h2></h2>
+              <input
+                type="reset"
+                value="Volver a jugar"
+                class="btn btn-primary fs-5"
+              />
+            </div>
+          </form>
         </div>
       </div>
-      <!--fin de seccion 4-->
+      <!--fin de seccion 1-->
+
       <!--seccion5-->
       <div class="container-fluid">
         <div class="container-fluid">
@@ -348,9 +275,7 @@
                     >
                   </li>
                   <li>
-                    <a class="text-decoration-none" href="Juegos.html"
-                      >Juegos</a
-                    >
+                    <a class="text-decoration-none" href="#">Juegos</a>
                   </li>
                 </ul>
               </div>
@@ -422,7 +347,6 @@
       </div>
       <!--fin de seccion 5-->
     </div>
-
     <!--aqui empieza el footer-->
     <div class="container-fluid">
       <div class="container-fluid">
@@ -433,7 +357,7 @@
 
           <a class="bi" width="40" height="32" href="Index.html">
             <img
-              src="../Trabajo/imagenes/logo.png"
+              src="../TrabajoReal/IMAGES/logo.png"
               alt="Logo"
               height="34"
               width="36"
@@ -460,10 +384,44 @@
         </footer>
       </div>
     </div>
+    <script>
+      const cara = document.getElementById("cara");
+      const pupilas = document.querySelectorAll(".pupila");
+
+      const mover = (evento) => {
+        // Verificar si el ancho de la ventana es menor o igual a 600px
+        if (window.innerWidth > 600) {
+          let x = evento.clientX / (window.innerWidth / 110);
+          let y = evento.clientY / 7;
+          let fX = evento.clientX / 20;
+          let fY = evento.clientY / 20;
+
+          for (const pupila of pupilas) {
+            pupila.style.transform = `translate(${x}px, ${y}px)`;
+          }
+        } else {
+          // Mantener las pupilas centradas si el ancho de la ventana es 600px o menos
+          for (const pupila of pupilas) {
+            pupila.style.transform = "translate(80%, 80%)";
+          }
+        }
+      };
+
+      window.addEventListener("mousemove", mover);
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
   </body>
 </html>
