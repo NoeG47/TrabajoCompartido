@@ -176,13 +176,11 @@ input:checked ~ #mensaje {
 }
 
 #iconos {
-  display: ruby-text;
+  display: flex;
+  justify-content: center;
 }
 
 #iconos > div {
-  flex: 1;
-  align-items: center;
-  justify-content: center;
   width: 60px;
   height: 60px;
   overflow: hidden;
