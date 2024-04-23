@@ -446,24 +446,22 @@
         const foto = document.getElementById("foto");
 
         const gifSrc = "../TrabajoReal/IMAGES/pedro.gif";
-        const imagenEstaticaSrc =
-          "http://127.0.0.1:5500/TrabajoReal/IMAGES/pedro.png";
+        const imagenEstaticaSrc = "../TrabajoReal/IMAGES/pedro.png";
 
-        if (foto.src == imagenEstaticaSrc) {
-          foto.src = gifSrc;
+        if (foto.getAttribute("src") === imagenEstaticaSrc) {
+          foto.setAttribute("src", gifSrc);
           audio.play();
           boton.value = "Pausar";
         } else {
-          foto.src = imagenEstaticaSrc;
+          foto.setAttribute("src", imagenEstaticaSrc);
           audio.pause();
           audio.currentTime = 0;
           boton.value = "Reproducir";
         }
-        debugger;
-        // Evento para detectar el final del audio
+
         audio.addEventListener("ended", function () {
-          foto.src = imagenEstaticaSrc; // Restaurar la imagen estática al finalizar el audio
-          boton.value = "Reproducir"; // Cambiar el texto del botón a "Reproducir" al finalizar el audio
+          foto.setAttribute("src", imagenEstaticaSrc);
+          boton.value = "Reproducir";
         });
       }
     </script>
