@@ -13,10 +13,7 @@
 .card {
   border: none !important;
 }
-.initial-letter {
-  background: #ff00f7;
-  -webkit-background-clip: text;
-}
+
 .imgs {
   aspect-ratio: 8/2;
   object-fit: contain;
