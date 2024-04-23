@@ -253,11 +253,21 @@
           </h1>
           <div class="container text-center py-4">
             <img
-              src="../TrabajoReal/IMAGES/pedro.gif"
+              src="../TrabajoReal/IMAGES/pedro.png"
               alt="Pedro mapache gif"
-              class=""
               style="max-width: 100%"
+              id="foto"
             />
+            <audio id="audio" src="Pedro.mp3"></audio>
+            <div class="d-flex justify-content-center py-3">
+              <input
+                type="button"
+                value="Reproducir"
+                class="btn btn-primary fs-5"
+                onclick="toggleReproductor()"
+                id="reproductor"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -404,6 +414,7 @@
       </div>
     </div>
     <script>
+      //js de la cara
       const cara = document.getElementById("cara");
       const pupilas = document.querySelectorAll(".pupila");
 
@@ -427,20 +438,39 @@
       };
 
       window.addEventListener("mousemove", mover);
+      //fin de js de la cara
+      //pedro pedro
+      function toggleReproductor() {
+        const boton = document.getElementById("reproductor");
+        const audio = document.getElementById("audio");
+        const foto = document.getElementById("foto");
+
+        const gifSrc = "../TrabajoReal/IMAGES/pedro.gif";
+        const imagenEstaticaSrc =
+          "http://127.0.0.1:5500/TrabajoReal/IMAGES/pedro.png";
+
+        if (foto.src == imagenEstaticaSrc) {
+          foto.src = gifSrc;
+          audio.play();
+          boton.value = "Pausar";
+        } else {
+          foto.src = imagenEstaticaSrc;
+          audio.pause();
+          audio.currentTime = 0;
+          boton.value = "Reproducir";
+        }
+        debugger;
+        // Evento para detectar el final del audio
+        audio.addEventListener("ended", function () {
+          foto.src = imagenEstaticaSrc; // Restaurar la imagen estática al finalizar el audio
+          boton.value = "Reproducir"; // Cambiar el texto del botón a "Reproducir" al finalizar el audio
+        });
+      }
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      var tooltipTriggerList = [].slice.call(
-        document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      );
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
-      });
-    </script>
   </body>
 </html>

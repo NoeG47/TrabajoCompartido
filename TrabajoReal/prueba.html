@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Proximamente más-->
+    <div class="container-fluid">
+      <div class="container-fluid">
+        <!--añadir cosas aqui, debajo-->
+        <h1 class="h1 merienda bg-text text-center pt-4 lh-base">
+          Proximamente más juegos
+        </h1>
+        <div class="container text-center py-4">
+          <input
+            type="button"
+            id="reproductor"
+            value="Reproducir"
+            onclick="toggleReproductor()"
+          />
+          <audio id="audio" src="Pedro.mp3"></audio>
+          <img
+            src="../TrabajoReal/IMAGES/pedro.png"
+            alt="Pedro mapache gif"
+            id="foto"
+            style="max-width: 100%"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--Fin de proximamente-->
+    <script>
+      function toggleReproductor() {
+        const boton = document.getElementById("reproductor");
+        const audio = document.getElementById("audio");
+        const foto = document.getElementById("foto");
+
+        const gifSrc = "../TrabajoReal/IMAGES/pedro.gif";
+        const imagenEstaticaSrc =
+          "http://127.0.0.1:5500/TrabajoReal/IMAGES/pedro.png";
+
+        if (foto.src == imagenEstaticaSrc) {
+          foto.src = gifSrc;
+          audio.play();
+          boton.value = "Pausar";
+        } else {
+          foto.src = imagenEstaticaSrc;
+          audio.pause();
+          audio.currentTime = 0;
+          boton.value = "Reproducir";
+        }
+        debugger;
+        // Evento para detectar el final del audio
+        audio.addEventListener("ended", function () {
+          foto.src = imagenEstaticaSrc; // Restaurar la imagen estática al finalizar el audio
+          boton.value = "Reproducir"; // Cambiar el texto del botón a "Reproducir" al finalizar el audio
+        });
+      }
+    </script>
+  </body>
+</html>
