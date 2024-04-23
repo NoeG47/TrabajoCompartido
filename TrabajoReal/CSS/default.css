@@ -20,6 +20,10 @@ body {
   -webkit-text-fill-color: transparent;
   color: #21d4fd;
 }
+.initial-letter {
+  background: #ff00f7;
+  -webkit-background-clip: text;
+}
 .merienda {
   font-family: "Merienda", cursive;
   font-optical-sizing: auto;
