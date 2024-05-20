@@ -13,7 +13,10 @@
 .card {
   border: none !important;
 }
-
+.initial-letter {
+  background: #ff00f7;
+  -webkit-background-clip: text;
+}
 .imgs {
   aspect-ratio: 8/2;
   object-fit: contain;
@@ -63,16 +66,7 @@
   background: -webkit-linear-gradient(90deg, #4221fd 0%, #b721ff 100%);
   border: 1px solid #4221fd;
 }
-.hr1 {
-  border: 0;
-  height: 2px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgb(98 0 255),
-    rgba(0, 0, 0, 0)
-  );
-}
+
 /* mediaQuery*/
 @media only screen and (max-width: 767px) {
   .reverse {
